@@ -1,0 +1,11 @@
+{
+  "name": "@iterate-com/iterate-estate",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "@iterate-com/sdk": "https://pkg.pr.new/iterate/iterate/@iterate-com/sdk@fcb5a03ef8e108b30a1e12c42880a40a585d3c5e"
+  }
+}
