@@ -28,6 +28,28 @@ const config = defineConfig({
         }),
       ),
     },
+    {
+      key: "mineflare-faq-c09l4usqkn2",
+      prompt: `
+# Mineflare FAQ
+
+**What is Mineflare?**
+Mineflare provides managed Minecraft hosting tailored for community servers with automated scaling and modpack management.
+
+**What are the support hours?**
+Our support engineers monitor requests Monday–Friday, 08:00–20:00 UTC, with on-call escalation for critical incidents outside these hours.
+
+**How do I report an outage?**
+Post a message in this channel with the keyword "INCIDENT" and include the affected server ID; the on-call engineer is paged automatically.
+
+**Where can I track maintenance and updates?**
+Visit https://status.mineflare.io for live maintenance windows and subscribe for email/SMS notifications.
+
+**Can I request custom modpacks?**
+Yes. Upload the modpack manifest via the Mineflare dashboard and tag @support here for fast-tracking within 24 hours.
+`,
+      match: matchers.slackChannel("C09L4USQKN2"),
+    },
     // This file is "just typescript", so you can do whatever you want
     // e.g. structure your rules in markdown, too, and use a helper to load them
     ...contextRulesFromFiles("rules/**/*.md"),
