@@ -1,0 +1,14 @@
+Create a new markdown file in the estate repository under docs/mineflare-faq.md with the following content:
+
+# Mineflare FAQs
+
+Q: What is Mineflare
+A: Mineflare is a Minecraft server hosting service that runs on Cloudflare
+
+Q: How much does Mineflare cost
+A: it costs 50 cents per hour that your Minecraft server is running.
+
+Q: What if I forget to turn off my Mineflare server
+A: Minecraft servers automatically shut down after 20 mins of inactivity
+
+Then add a memory or configuration so that in Slack channel C09L4USQKN2 this FAQ context is always loaded for the @iterate assistant. If the estate repo supports a channel-specific context or memory file, create or update it (e.g., .iterate/context/channel-C09L4USQKN2.md) to include a short summary of the above FAQ and a link reference to docs/mineflare-faq.md. If such a mechanism does not exist, add a TODO note in the repo indicating that channel-scoped context loading should be implemented and include the FAQ summary for now.
