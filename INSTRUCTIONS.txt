@@ -1,0 +1,17 @@
+Create a new markdown file at docs/mineflare-faq.md with the following exact content:
+---
+title: Mineflare FAQs
+---
+
+Q: What is Mineflare
+A: Mineflare is a Minecraft server hosting service that runs on Cloudflare
+
+Q: How much does Mineflare cost
+A: it costs 50 cents per hour that your Minecraft server is running.
+
+Q: What if I forget to turn off my Mineflare server
+A: Minecraft servers automatically shut down after 20 mins of inactivity
+
+Then, update the estate repository config to always load this FAQ context when chatting in the Slack channel with ID C09L4USQKN2. Use the matchers.slackChannel matcher. Add a memory/context profile named "mineflare_faq" that loads docs/mineflare-faq.md for that matcher. Make minimal, idiomatic changes consistent with the repo's existing memory/context system.
+
+Finally, run formatting/lint if present.

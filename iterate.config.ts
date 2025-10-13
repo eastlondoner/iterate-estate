@@ -30,6 +30,11 @@ const config = defineConfig({
     },
     // This file is "just typescript", so you can do whatever you want
     // e.g. structure your rules in markdown, too, and use a helper to load them
+    ...contextRulesFromFiles("docs/mineflare-faq.md").map((rule) => ({
+      ...rule,
+      key: "mineflare_faq",
+      match: matchers.slackChannel("C09L4USQKN2"),
+    })),
     ...contextRulesFromFiles("rules/**/*.md"),
   ],
 });
