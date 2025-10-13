@@ -34,3 +34,11 @@ const config = defineConfig({
   ],
 });
 export default config;
+
+// Auto-loaded context for #C09L4USQKN2
+export const channelAutoContext = [
+  {
+    channelId: 'C09L4USQKN2',
+    files: ['docs/faq/mineflare.md']
+  }
+];
