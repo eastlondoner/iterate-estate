@@ -1,0 +1,12 @@
+{
+  "channels": {
+    "C09L4USQKN2": {
+      "summary": [
+        "Mineflare: Minecraft server hosting on Cloudflare",
+        "Pricing: $0.50/hr while running",
+        "Auto-shutdown: after 20 minutes of inactivity"
+      ],
+      "reference": "docs/mineflare-faq.md"
+    }
+  }
+}
