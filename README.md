@@ -3,6 +3,8 @@
 
 # Welcome to your iterate repo!
 
+Note: This line was updated by @iterate via Codex to verify the end-to-end PR flow 🛠️
+
 Use `iterate.config.ts` to configure your @iterate agent.
 
 It's just typescript, so you can experiment with different ways of structuring your repo.
@@ -25,3 +27,6 @@ Using git makes it easy for
 - a human to approve proposed changes an AI is making
 - for an agent to make atomic changes across different parts of the company
 - for the agent to update its own behaviour (per-customer system prompt learning)
+
+---
+Test change: Codex updated this README via @iterate on 2025-10-19 12:07:59Z.
