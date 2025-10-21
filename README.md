@@ -1,7 +1,16 @@
+## Sandbox Test
+
+Temporary validation edit performed on 2025-10-21.
+
 > [!IMPORTANT]
 > Remember to go back to the iterate website to grant the bot access to your repository.
 
 # Welcome to your iterate repo!
+
+## Codex Sandbox Test
+- Change ID: codex-sandbox-smoke
+- Timestamp: 2025-10-21T13:44:33Z
+- Description: This is a no-op test edit made by Codex to validate write access in a sandbox.
 
 Use `iterate.config.ts` to configure your @iterate agent.
 
