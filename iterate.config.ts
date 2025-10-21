@@ -1,4 +1,20 @@
 import { contextRulesFromFiles, defineConfig, matchers } from "@iterate-com/sdk";
+import channelRulesJson from "./policies/channel-rules.json" assert { type: "json" };
+
+type ChannelRule = {
+  channel: string;
+  description: string;
+  enabled: boolean;
+  name: string;
+};
+
+const channelContextRules = (channelRulesJson as ChannelRule[])
+  .filter((rule) => rule.enabled)
+  .map((rule) => ({
+    key: `slack-channel-${rule.name}`,
+    prompt: rule.description,
+    match: matchers.slackChannel(rule.channel),
+  }));
 
 const config = defineConfig({
   contextRules: [
@@ -30,6 +46,7 @@ const config = defineConfig({
     },
     // This file is "just typescript", so you can do whatever you want
     // e.g. structure your rules in markdown, too, and use a helper to load them
+    ...channelContextRules,
     ...contextRulesFromFiles("rules/**/*.md"),
   ],
 });
