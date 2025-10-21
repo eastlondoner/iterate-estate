@@ -3,6 +3,10 @@
 
 # Welcome to your iterate repo!
 
+## Test Change (2025-10-21)
+
+This is a sandbox test by @iterate to validate the Codex flow.
+
 Use `iterate.config.ts` to configure your @iterate agent.
 
 It's just typescript, so you can experiment with different ways of structuring your repo.
