@@ -1,3 +1,4 @@
+> Note: 2025-10-21 — Temporary Codex sandbox test change automated by @iterate Codex; safe to remove.
 > [!IMPORTANT]
 > Remember to go back to the iterate website to grant the bot access to your repository.
 
